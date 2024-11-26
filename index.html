@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aku Cicil By-Awalliya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+    }
+    .header .notification {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .loan-section {
+      background-color: #a4d65e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+    .loan-section span {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #f4f4f4;
+    }
+    .balance-section {
+      background-color: #0077ff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .balance-section h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+      justify-content: space-around;
+    }
+    .buttons button {
+      flex: 1 1 calc(50% - 10px);
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .buttons button:hover {
+      background-color: #e0e0e0;
+    }
+    .transaction-section {
+      padding: 20px;
+    }
+    .transaction-section h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+    .transaction-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .transaction-table th, .transaction-table td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .transaction-table td {
+      font-size: 14px;
+    }
+    .transaction-table .income {
+      color: green;
+      font-weight: bold;
+    }
+    .transaction-table .expense {
+      color: red;
+      font-weight: bold;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: #f4f4f4;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+    }
+    .footer button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .footer button:hover {
+      color: #0077ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      Aku Cicil
+      <div class="notification">🔔</div>
+    </div>
+    <div class="loan-section">
+      <strong>PayLater Limit Xtra</strong>
+      <span>Dapatkan limit Paylater untuk menikmati cashback hingga Rp1JT saat pembelian barang elektronik dan lainya!</span>
+    </div>
+    <div class="balance-section">
+      <p>Saldo Saya</p>
+      <h1>Rp. 300.000</h1>
+      <p>Nomor : 0857 2374 8467</p>
+    </div>
+    <div class="buttons">
+      <button>Isi Saldo</button>
+      <button>Kode Bayar</button>
+      <button>Paylater</button>
+      <button>Pulsa, Tagihan dan Tiket</button>
+      <button>Termurah di Aku Cicil</button>
+    </div>
+    <div class="transaction-section">
+      <h2>Transaksi Terakhir</h2>
+      <table class="transaction-table">
+        <tr>
+          <td> Tiket Kereta</td>
+          <td class="expense">-Rp 45.000</td>
+        </tr>
+        <tr>
+          <td>Mie Gacoan</td>
+          <td class="expense">-Rp 250.000</td>
+        </tr>
+        <tr>
+          <tr>
+            <td>Token Listrik</td>
+            <td class="expense">-Rp 800.000</td>
+          </tr>
+      </table>
+    </div>
+
+    <section class="image-section">
+      <figure>
+          <img src="img/sikatgigi.jfif" alt="Untuk Gigi Cerah" width="100px">
+          <p><del>Rp.336.500</del><em> 11% </em><mark>Rp.299.900</mark></p>
+          <figcaption>Colgate Sikat Gigi Elektrik</figcaption>
+      </figure>
+      <figure>
+          <img src="img/downloadsusu.jfif" alt="Susu Anak" width="100">
+          <p><del>Rp.489.000</del><em> 9% </em><mark>Rp.445.000</mark></p>
+          <figcaption>Bebelac 3 Susu Bubuk Pertumbuhan Anak</figcaption>
+      </figure>
+  </section>
+  
+    <div class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
+        <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
